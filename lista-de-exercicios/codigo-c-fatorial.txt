@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+   int r=1, n, x;
+    printf("digite um numero que deseja calcular o fatorial\n");
+    scanf("%i", &n);
+    for(x=n; x>=1; x--){
+        r=r*x; // a multiplicação é igual a multiplicação do resultado da multiplicação anterior vezes o numero seguinte ou anterior
+    }
+    printf("resultado do fatorial:%i", r);
+    return 0;
+}
